@@ -1,19 +1,19 @@
 public class FizzBuzz {
-    private final int x;
+    private final int number;
 
-    public FizzBuzz(int x) {
-        this.x = x;
+    public FizzBuzz(int number) {
+        this.number = number;
     }
 
     public String give() {
-        if (x % 3 == 0 && x % 5 == 0) {
+        if (number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
-        } else if (x % 5 == 0) {
+        } else if (number % 5 == 0) {
             return "Buzz";
-        } else if (x % 3 == 0) {
+        } else if (number % 3 == 0) {
             return "Fizz";
         } else {
-            return String.valueOf(x);
+            return String.valueOf(number);
         }
     }
 }
