@@ -45,6 +45,8 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz(15, printStream);
         fizzBuzz.printAll();
         verify(printStream, times(4)).println("Fizz");
+        verify(printStream, times(2)).println("Buzz");
+        verify(printStream, times(1)).println("FizzBuzz");
     }
 
 }
